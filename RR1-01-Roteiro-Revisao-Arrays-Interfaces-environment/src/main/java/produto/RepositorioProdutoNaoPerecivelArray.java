@@ -1,14 +1,14 @@
 package produto;
 
 /**
- * Classe que representa um reposit√≥rio de produtos usando arrays como estrutura
- * sobrejacente. Alguns m√©todos (atualizar, remover e procurar) ou executam com
- * sucesso ou retornam um erro. Para o caso desde exerc√≠cio, o erro ser√°
- * representado por uma RuntimeException que n√£o precisa ser declarada na
+ * Classe que representa um repositÛrio de produtos usando arrays como estrutura
+ * sobrejacente. Alguns mÈtodos (atualizar, remover e procurar) ou executam com
+ * sucesso ou retornam um erro. Para o caso desde exercÌcio, o erro ser·
+ * representado por uma RuntimeException que n„o precisa ser declarada na
  * clausula "throws" do mos metodos.
  * 
- * Obs: Note que voc√™ deve utilizar a estrutura de dados array e n√£o
- * implementa√ß√µes de array prontas da API Collections de Java (como ArrayList,
+ * Obs: Note que vocÍ deve utilizar a estrutura de dados array e n„o
+ * implementaÁıes de array prontas da API Collections de Java (como ArrayList,
  * por exemplo).
  * 
  * @author Adalberto
@@ -22,7 +22,7 @@ public class RepositorioProdutoNaoPerecivelArray {
 
 	/**
 	 * A posicao do ultimo elemento inserido no array de produtos. o valor
-	 * inicial √© -1 para indicar que nenhum produto foi ainda guardado no array.
+	 * inicial È -1 para indicar que nenhum produto foi ainda guardado no array.
 	 */
 	private int index = -1;
 
@@ -33,9 +33,9 @@ public class RepositorioProdutoNaoPerecivelArray {
 
 	/**
 	 * Recebe o codigo do produto e devolve o indice desse produto no array ou
-	 * -1 caso ele nao se encontre no array. Esse m√©todo √© util apenas na
+	 * -1 caso ele nao se encontre no array. Esse mÈtodo È util apenas na
 	 * implementacao com arrays por questoes de localizacao. Outras classes que
-	 * utilizam outras estruturas internas podem nao precisar desse m√©todo.
+	 * utilizam outras estruturas internas podem nao precisar desse mÈtodo.
 	 * 
 	 * @param codigo
 	 * @return
@@ -66,7 +66,7 @@ public class RepositorioProdutoNaoPerecivelArray {
 
 	/**
 	 * Atualiza um produto armazenado ou retorna um erro caso o produto nao
-	 * esteja no array. Note que, para localizacao, o c√≥digo do produto ser√°
+	 * esteja no array. Note que, para localizacao, o cÛdigo do produto ser·
 	 * utilizado.
 	 */
 	public void atualizar(ProdutoNaoPerecivel produto) {
@@ -76,7 +76,7 @@ public class RepositorioProdutoNaoPerecivelArray {
 
 	/**
 	 * Remove produto com determinado codigo, se existir, ou entao retorna um
-	 * erro, caso contr√°rio. Note que a remo√ß√£o N√ÉO pode deixar "buracos" no
+	 * erro, caso contr·rio. Note que a remoÁ„o N√O pode deixar "buracos" no
 	 * array.
 	 * 
 	 * @param codigo

@@ -8,7 +8,6 @@ public class Produto {
 	private String descricao;
 
 	public Produto(int codigo, String nome, double preco, String descricao) {
-		super();
 		this.codigo = codigo;
 		this.nome = nome;
 		this.preco = preco;
@@ -48,15 +47,17 @@ public class Produto {
 	}
 
 	/**
-	 * A redefiniÃ§Ã£o Ã© necessaria para permitir que objetos sejam comparados
-	 * quando usados em coleÃ§Ãµes.
+	 * A redefinição é necessaria para permitir que objetos sejam comparados quando
+	 * usados em coleções.
 	 */
 	@Override
 	public boolean equals(Object obj) {
 		boolean result = false;
+
 		if (obj instanceof Produto) {
-			result = this.codigo == ((Produto) obj).getCodigo();
+			result = this.getCodigo() == ((Produto) obj).getCodigo();
 		}
+
 		return result;
 	}
 
