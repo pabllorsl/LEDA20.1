@@ -6,9 +6,9 @@ public class ProdutoPerecivel extends Produto {
 
 	private GregorianCalendar dataValidade;
 
-	public ProdutoPerecivel(int codigo, String nome, double preco, String descricao, GregorianCalendar datavalidate) {
+	public ProdutoPerecivel(int codigo, String nome, double preco, String descricao, GregorianCalendar dataValidade) {
 		super(codigo, nome, preco, descricao);
-		this.dataValidade = datavalidate;
+		this.dataValidade = dataValidade;
 	}
 
 	public GregorianCalendar getDataValidade() {
