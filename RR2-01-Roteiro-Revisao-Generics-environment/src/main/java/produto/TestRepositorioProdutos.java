@@ -27,7 +27,7 @@ public class TestRepositorioProdutos {
 
 	@Test
 	public void testInserirProduto() {
-		repositorio.inserir(new Produto(5, "Feijao", 10.0, "Feij�o carioca"));
+		repositorio.inserir(new Produto(5, "Feijao", 10.0, "Feijao carioca"));
 		assertTrue(repositorio.existe(5));
 	}
 
@@ -45,9 +45,9 @@ public class TestRepositorioProdutos {
 
 	@Test
 	public void testAtualizarProduto() {
-		repositorio.inserir(new Produto(5, "Feijao", 10.0, "Feij�o carioca"));
-		repositorio.atualizar(new Produto(5, "Feijao", 10.0, "Feij�o macassar"));
-		assertEquals("Feij�o macassar", repositorio.procurar(5).getDescricao());
+		repositorio.inserir(new Produto(5, "Feijao", 10.0, "Feijao carioca"));
+		repositorio.atualizar(new Produto(5, "Feijao", 10.0, "Feijao macassar"));
+		assertEquals("Feijao macassar", repositorio.procurar(5).getDescricao());
 	}
 
 	@Test
@@ -60,13 +60,13 @@ public class TestRepositorioProdutos {
 	@Test
 	public void testAtualizarProdutoNaoPerecivel() {
 		repositorio.inserir(new ProdutoNaoPerecivel(7, "Macarrao", 3.0, "Macarrao Talharim", "Plastico"));
-		repositorio.atualizar(new ProdutoNaoPerecivel(7, "Macarrao", 3.0, "Macarrao Ravi�li", "Plastico"));
-		assertEquals("Macarrao Ravi�li", repositorio.procurar(7).getDescricao());
+		repositorio.atualizar(new ProdutoNaoPerecivel(7, "Macarrao", 3.0, "Macarrao Raviali", "Plastico"));
+		assertEquals("Macarrao Raviali", repositorio.procurar(7).getDescricao());
 	}
 
 	@Test
 	public void testRemoverProduto() {
-		repositorio.inserir(new Produto(5, "Feijao", 10.0, "Feij�o carioca"));
+		repositorio.inserir(new Produto(5, "Feijao", 10.0, "Feijao carioca"));
 		repositorio.remover(5);
 		assertFalse(repositorio.existe(5));
 	}
@@ -88,7 +88,7 @@ public class TestRepositorioProdutos {
 	@Test
 	public void testProcurarProduto() {
 		assertNull(repositorio.procurar(5));
-		repositorio.inserir(new Produto(5, "Feijao", 10.0, "Feij�o carioca"));
+		repositorio.inserir(new Produto(5, "Feijao", 10.0, "Feijao carioca"));
 		assertNotNull(repositorio.procurar(5));
 	}
 

@@ -11,7 +11,7 @@ public class ContaBonificada extends Conta {
 	}
 
 	/**
-	 * M�todo redefinido para se adequar a classe de contas bonificadas
+	 * Metodo redefinido para se adequar a classe de contas bonificadas
 	 * 
 	 * @param valor o valor a ser creditado.
 	 */

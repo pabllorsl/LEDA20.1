@@ -11,7 +11,7 @@ public class TesteRepositorioGenerico {
 		RepositorioConta repContas = new RepositorioConta();
 		RepositorioGenerico rep = new RepositorioGenerico();
 		
-		//quero um repositorio que só guarda clientes
+		//quero um repositorio que so guarda clientes
 		Cliente cli1 = new Cliente("1","Jose");
 		Cliente cli2 = new Cliente("2","Joao");
 		repClientes.inserir(cli1);

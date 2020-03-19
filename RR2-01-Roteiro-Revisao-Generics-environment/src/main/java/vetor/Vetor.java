@@ -3,7 +3,7 @@ package vetor;
 import java.util.Comparator;
 
 /**
- * Implementação de um vetor de objetos simples para exercitar os conceitos de
+ * Implementacao de um vetor de objetos simples para exercitar os conceitos de
  * Generics.
  * 
  * @author Adalberto
@@ -11,13 +11,13 @@ import java.util.Comparator;
  */
 public class Vetor {
 
-	// O array interno onde os objetos manipulados são guardados
+	// O array interno onde os objetos manipulados sao guardados
 	private Object[] arrayInterno;
 
-	// O tamanho que o array interno terá
+	// O tamanho que o array interno tera
 	private int tamanho;
 
-	// Indice que guarda a proxima posição vazia do array interno
+	// Indice que guarda a proxima posicao vazia do array interno
 	private int indice;
 
 	// O Comparators a serem utilizados
@@ -56,13 +56,13 @@ public class Vetor {
 		throw new UnsupportedOperationException("Not implemented yet!");
 	}
 
-	// Diz se o vetor está vazio
+	// Diz se o vetor esta vazio
 	public boolean isVazio() {
 		// TODO Remove the exception and implement your code
 		throw new UnsupportedOperationException("Not implemented yet!");
 	}
 
-	// Diz se o vetor está cheio
+	// Diz se o vetor esta cheio
 	public boolean isCheio() {
 		// TODO Remove the exception and implement your code
 		throw new UnsupportedOperationException("Not implemented yet!");
