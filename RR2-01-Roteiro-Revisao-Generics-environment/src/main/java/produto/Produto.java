@@ -48,8 +48,8 @@ public class Produto {
 	}
 
 	/**
-	 * A redefinição é necessaria para permitir que objetos sejam comparados
-	 * quando usados em coleções.
+	 * A redefinição é necessaria para permitir que objetos sejam comparados quando
+	 * usados em coleções.
 	 */
 	@Override
 	public boolean equals(Object obj) {
