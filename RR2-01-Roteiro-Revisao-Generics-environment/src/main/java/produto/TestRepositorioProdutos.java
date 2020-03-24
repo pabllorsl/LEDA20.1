@@ -60,8 +60,8 @@ public class TestRepositorioProdutos {
 	@Test
 	public void testAtualizarProdutoNaoPerecivel() {
 		repositorio.inserir(new ProdutoNaoPerecivel(7, "Macarrao", 3.0, "Macarrao Talharim", "Plastico"));
-		repositorio.atualizar(new ProdutoNaoPerecivel(7, "Macarrao", 3.0, "Macarrao Raviali", "Plastico"));
-		assertEquals("Macarrao Raviali", repositorio.procurar(7).getDescricao());
+		repositorio.atualizar(new ProdutoNaoPerecivel(7, "Macarrao", 3.0, "Macarrao Ravioli", "Plastico"));
+		assertEquals("Macarrao Ravioli", repositorio.procurar(7).getDescricao());
 	}
 
 	@Test
